@@ -220,6 +220,10 @@
   }
   &__content {
     display: flex;
+    justify-content: space-between;
+    background: url("../img/market/market.svg") no-repeat;
+    background-position-x: left;
+    background-size: contain;
   }
   &__info {
     max-width: 345px;
@@ -251,12 +255,118 @@
     line-height: 80px;
     color: #fff;
     padding: 25px 46px;
-    margin-bottom: 35px;
   }
-  &__people{
+  &__people {
     display: grid;
-    grid-template-columns: minmax(10px 62px) minmax(20px 149px);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 10px;
+    margin-top: 35px;
+    img {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+    }
+    span {
+      grid-column: 2 / 5;
+      font-size: 14px;
+      color: #727272;
+    }
+  }
+  &__people-name {
+    grid-column: 2 / 5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 60px;
+    color: #000;
+  }
+  &__invest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    max-width: 289px;
+    width: 100%;
+    min-height: 200px;
+  }
+  &__number {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 20px;
+    color: rgba(17, 120, 178, 0.5);
+    margin-bottom: 30px;
+    span {
+      font-size: 24px;
+      line-height: 20px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(16, 16, 16, 0.5);
+  }
+}
+.it-bisness {
+  padding: 50px 0;
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 392px;
+    width: 100%;
+    min-height: 284px;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+      margin-bottom: 30px;
+    }
+    span {
+      display: block;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 120px;
+      line-height: 145px;
+      text-align: center;
+      background: linear-gradient(143.71deg, #8bd7dc 21.17%, #1246a9 127.82%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      // text-fill-color: transparent;
+    }
+    p {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #232323;
+    }
   }
 }
 .footer {

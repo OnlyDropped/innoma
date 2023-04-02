@@ -377,6 +377,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("../img/market/market.svg") no-repeat;
+  background-position-x: left;
+  background-size: contain;
 }
 
 .market__info {
@@ -413,16 +419,168 @@ a {
   line-height: 80px;
   color: #fff;
   padding: 25px 46px;
-  margin-bottom: 35px;
 }
 
 .market__people {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(10px 62px) minmax(20px 149px);
-      grid-template-columns: minmax(10px 62px) minmax(20px 149px);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  margin-top: 35px;
+}
+
+.market__people img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+.market__people span {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  font-size: 14px;
+  color: #727272;
+}
+
+.market__people-name {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 60px;
+  color: #000;
+}
+
+.market__invest {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.market__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  max-width: 289px;
+  width: 100%;
+  min-height: 200px;
+}
+
+.market__number {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 20px;
+  color: rgba(17, 120, 178, 0.5);
+  margin-bottom: 30px;
+}
+
+.market__number span {
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.market__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(16, 16, 16, 0.5);
+}
+
+.it-bisness {
+  padding: 50px 0;
+}
+
+.it-bisness__title {
+  margin-bottom: 15px;
+}
+
+.it-bisness__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.it-bisness__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.it-bisness__item {
+  max-width: 392px;
+  width: 100%;
+  min-height: 284px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.it-bisness__item img {
+  margin-bottom: 30px;
+}
+
+.it-bisness__item span {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 120px;
+  line-height: 145px;
+  text-align: center;
+  background: linear-gradient(143.71deg, #8bd7dc 21.17%, #1246a9 127.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.it-bisness__item p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #232323;
 }
 
 .footer {
