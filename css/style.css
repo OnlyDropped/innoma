@@ -596,6 +596,18 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+
+.info__inner::after {
+  position: absolute;
+  content: "";
+  background: url("../img/info/figure.svg") center center no-repeat;
+  width: 368px;
+  height: 231px;
+  right: -100px;
+  top: 30px;
+  z-index: 1;
 }
 
 .info__content {
@@ -626,6 +638,107 @@ a {
   background: #07af91;
   border-radius: 10px;
   padding: 20px 36px;
+}
+
+.info__logo {
+  max-width: 432px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  z-index: 2;
+}
+
+.info__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 206px;
+  height: 112px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.info__logo a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+}
+
+.result {
+  padding: 100px 0 50px;
+}
+
+.result__title {
+  margin-bottom: 20px;
+}
+
+.result__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.result__item {
+  max-width: 392px;
+  width: 100%;
+  min-height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+}
+
+.result__number {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 20px;
+  color: rgba(17, 120, 178, 0.5);
+  margin-bottom: 40px;
+}
+
+.result__heading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.result__text {
+  max-width: 306px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
 }
 
 .footer {
