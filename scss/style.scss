@@ -660,9 +660,43 @@
     background: #fff;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
     border-radius: 10px;
-    img{
+    img {
       margin: auto;
     }
+  }
+}
+.experts {
+  background: url("../img/experts-bg.png") center center no-repeat;
+  background-size: cover;
+  padding: 131px 0;
+  &__title {
+    max-width: 1018px;
+    margin: 0 auto 20px;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+  }
+  &__text {
+    max-width: 761px;
+    margin: 0 auto 20px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+  }
+  &__btn {
+    display: block;
+    background: linear-gradient(276.41deg, #016ca8 -7%, #61b5e4 77.16%);
+    border-radius: 10px;
+    padding: 0 73px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 80px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
   }
 }
 .footer {
