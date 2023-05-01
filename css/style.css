@@ -860,6 +860,139 @@ a {
   padding: 0 79px;
 }
 
+.who-me {
+  padding: 50px 0;
+}
+
+.who-me__title {
+  margin-bottom: 35px;
+}
+
+.who-me__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.who-me__description {
+  max-width: 598px;
+  width: 100%;
+  padding-left: 33px;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.who-me__description p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+}
+
+.who-me__description p + p {
+  margin-top: 50px;
+}
+
+.who-me__description p span {
+  font-weight: 600;
+  color: #1178b2;
+}
+
+.who-me__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.who-me__content img {
+  -webkit-transform: translateX(65px);
+          transform: translateX(65px);
+}
+
+.who-me__box {
+  max-width: 608px;
+  width: 100%;
+  -webkit-transform: translateY(44px);
+          transform: translateY(44px);
+}
+
+.who-me__box p {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+}
+
+.who-me__name {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+}
+
+.who-me__name {
+  font-weight: 500;
+  margin-top: 47px;
+}
+
+.who-me__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners {
+  padding: 50px 0 100px;
+}
+
+.partners__title {
+  margin-bottom: 20px;
+}
+
+.partners__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 21px;
+}
+
+.partners__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 288px;
+  width: 100%;
+  min-height: 100px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+}
+
+.partners__link img {
+  margin: auto;
+}
+
 .footer {
   background: url("../img/footer-bg.jpg") center center no-repeat;
   background-size: cover;
