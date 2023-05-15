@@ -699,6 +699,63 @@
     margin: 0 auto;
   }
 }
+.events {
+  padding: 100px 0;
+  &__title {
+    margin-bottom: 35px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    max-width: 392px;
+    width: 100%;
+    min-height: 380px;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    width: 392px;
+    height: 156px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+    margin-bottom: 19px;
+  }
+  &__link {
+    max-width: 292px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    display: flex;
+    // background: goldenrod;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+    max-width: 284px;
+    width: 100%;
+    // background: plum;
+    margin-left: 30px;
+  }
+  &__date {
+    margin-top: auto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000;
+    margin-left: 30px;
+    // background: rgb(180, 180, 207);
+  }
+}
 .footer {
   background: url("../img/footer-bg.jpg") center center no-repeat;
   background-size: cover;
